@@ -66,20 +66,21 @@ const compiledCharTemplate = Handlebars.compile(charHTML); // assign a new Handl
 
 // passing a single object  to test
 // must have the same keys what we have in both the variables in the DOM script AND the data as they are the same
-console.log(
-  "testing =>",
-  compiledCharTemplate({
-    name: "david",
-    location: "Sydney",
-  })
-);
+
+// console.log(
+//   "testing =>",
+//   compiledCharTemplate({
+//     name: "david",
+//     location: "Sydney",
+//   })
+// );
 
 // passing a single object from the characters data
 
-console.log(
-  "second character from data =>",
-  compiledCharTemplate(cast.characters[1])
-);
+// console.log(
+//   "second character from data =>",
+//   compiledCharTemplate(cast.characters[1])
+// );
 
 // PASSING DATA BACK TO THE DOM (index.html)
 
