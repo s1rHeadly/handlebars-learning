@@ -24,7 +24,7 @@ var cast = {
       shortCode: "brienne",
       actor: "Gwendoline Christie",
       house: "Clegane",
-      location: "unknown",
+      location: false,
     },
     {
       name: "Eddard Stark",
@@ -38,7 +38,7 @@ var cast = {
       shortCode: "the-hound",
       actor: "Rory McCann",
       house: "Clegane",
-      location: "unknown",
+      location: false,
     },
   ],
 };
