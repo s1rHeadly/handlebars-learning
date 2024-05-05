@@ -88,9 +88,9 @@ const listDOM = getElement(".character-list-container"); // get the UL DOM Eleme
 // test => listDOM.innerHTML = compiledCharTemplate(cast.characters[0]);
 
 // set the html of the listDOM to the compiler using the data as the param
-listDOM.innerHTML = compiledCharTemplate(cast); // use the name of the variable here
+listDOM.innerHTML = compiledCharTemplate(cast); // pass the entire data object
 
-// NOW GO BACK INTO THE INDEX.HTML file, use the #EACH handlebars helper and pass in the characters key as the iterator
+// NOW GO BACK INTO THE INDEX.HTML file, use the #EACH handlebars helper and pass in the 'characters' key as the iterator
 /**
  *  {{#each characters}}
           <li class="character">
