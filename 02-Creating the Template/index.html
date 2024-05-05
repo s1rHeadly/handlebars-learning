@@ -12,13 +12,21 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <h1>Characters</h1>
     <!-- the container that will be used to house the json data with handlebars -->
     <ul class="character-list-container">
       <!-- add the handlebars template here -->
-      <script
-        id="character-list-container"
-        type="text/x-handlebars-template"
-      ></script>
+      <script id="character-template" type="text/x-handlebars-template">
+        {{#each characters}}
+          <li class="character">
+            <img src="images/{{shortCode}}.jpg" />
+            <h2>{{name}}</h2>
+            <p>Actor: {{actor}}</p>
+            <p>House: {{house}}</p>
+            <p>Whereabouts: {{location}}</p>
+          </li>
+        {{/each}}
+      </script>
     </ul>
 
     <script
@@ -27,6 +35,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="js/scripts.js" type="module"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
