@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="#" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <title>02 Creating the Template | Handlebars training</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Characters</h1>
+    <!-- the container that will be used to house the json data with handlebars -->
+    <ul class="character-list-container">
+      <!-- add the handlebars template here -->
+      <script id="character-template" type="text/x-handlebars-template">
+        {{#each characters}}
+          <li class="character">
+            <img src="images/{{shortCode}}.jpg" />
+            <h2>{{@index}} {{name}}</h2>
+            <p>Actor: {{actor}}</p>
+            <p>House: {{house}}</p>
+            <p>Whereabouts: {{location}}</p>
+          </li>
+        {{/each}}
+      </script>
+    </ul>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+      integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
